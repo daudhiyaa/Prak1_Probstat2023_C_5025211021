@@ -1,57 +1,49 @@
-mean <- 0
-s <- 1
-n <- 7
-
 # Poin A
-# P(X < a) = pt((a - μ) / (s/√n), df=n-1)
-a <- -2.34
-t <- (a - mean) / (s / sqrt(n))
-t
-
-probA <- pt(t, df = n-1)
+X <- -2.34
+df <- 6
+probA <- pt(X, df=df, lower.tail = TRUE)
 probA
 
 # Poin B
-# P(X > a) = 1 - pt((a - μ) / (s/√n), df=n-1)
-a <- 1.34
-t <- (a - mean) / (s / sqrt(n))
-t
-
-probB <- 1 - pt(t, df = n-1)
+X <- 1.34
+df <- 6
+probB <- pt(X, df=df, lower.tail = FALSE)
 probB
 
 # Poin C
-# P(|X| > a) = 2 * (1 - pt(|a|, df=n-1))
+X <- -1.23
 df <- 3
-a <- 1.23
-probC <- 2 * (1 - pt(abs(a), df))
+probC <- 2 * (pt(X, df=df, lower.tail = TRUE))
+probC
 
 # Poin D
-# P(|X| > a) = 1 - (2 * (1 - pt(|a|, df=n-1)))
+X <- -0.94
 df <- 14
-a <- 0.94
-probD <- 1 - (2 * (1 - pt(abs(a), df)))
+probD <- pt(abs(X), df=df) - pt(X, df=df)
+probD
 
 # Poin E
 area <- 0.0333
 df <- 5
-tscore_E <- qt(x, df)
+tscore_E <- qt(area, df, lower.tail = TRUE)
 tscore_E
 
 # Poin F
-area <- 1 - 0.125
+area <- 0.125
 df <- 25
-tscore_F <- qt(area, df)
+tscore_F <- qt(area, df, lower.tail = FALSE)
 tscore_F
 
 # Poin G
-x <- 0.75 + ((1-0.75)/2)
+area <- 0.75
+x <- (1-area)/2 + area
 df <- 11
-tscore_G <- qt(x, df=df)
+tscore_G <- qt(x, df)
 tscore_G
 
 # Poin H
-x <- 1 - (0.0333/2)
+area <- 0.0333
+x <- 1 - (area/2)
 df <- 23
-tscore_H <- qt(x, df=df)
+tscore_H <- qt(x, df)
 tscore_H
