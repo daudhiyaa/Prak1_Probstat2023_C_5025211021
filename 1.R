@@ -20,8 +20,8 @@ probability
 nilai_harapan <- n * p
 nilai_harapan
 
-simpangan_baku <- sqrt(n * p * (1-p))
-simpangan_baku
+standar_deviasi <- sqrt(n * p * (1-p))
+standar_deviasi
 
 # Poin F
 arr <- 0:10
