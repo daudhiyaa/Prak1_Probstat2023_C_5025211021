@@ -24,18 +24,18 @@ standar_deviasi <- sqrt(nilai_harapan)
 standar_deviasi
 
 # Poin F
-arr <- 0:6
-plot(arr, dpois(arr, lambda=1.8),
+arr <- 0:9
+plot(arr, dpois(arr, lambda=lambda),
      type='h',
      main='Histogram Distribusi Poisson',
-     xlab='Banyak kematian'
-     ylab='Probabilitas',
+     xlab='Banyak kematian',
+     ylab='Probabilitas'
 )
 
 # Poin G
 n <- 10
 set.seed(1)
-ans <- rpois(n=n, lambda=1.8)
+ans <- rpois(n=n, lambda=lambda)
 ans
 
 # Poin H
