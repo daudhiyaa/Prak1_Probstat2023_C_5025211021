@@ -2,14 +2,14 @@
 
 ## Daftar Isi
 
-- ### [Identitas Diri]()
-- ### [Nomor 1]()
-- ### [Nomor 2]()
-- ### [Nomor 3]()
-- ### [Nomor 4]()
-- ### [Nomor 5]()
+- #### [Identitas Diri](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#identitas-diri-1)
+- #### [Nomor 1](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-1)
+- #### [Nomor 2](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-2)
+- #### [Nomor 3](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-3)
+- #### [Nomor 4](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-4)
+- #### [Nomor 5](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-5)
 
-### Identitas Diri
+## Identitas Diri
 
 | Nama               | NRP        |
 | ------------------ | ---------- |
@@ -26,8 +26,8 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
   Solusi :
 
   ```
-  Distribusi yang sesuai : BINOMIAL.
-  Karena kemungkinannya hanya ada 2 yaitu laki2 / bukan laki2. Dan karena terdapat lebih dari 1 kejadian, maka termasuk distribusi Binomial bukan bernouli.
+  Distribusi yang sesuai : BINOMIAL
+  Karena kemungkinannya hanya ada 2 yaitu laki2 / bukan laki2 dan terdapat lebih dari 1 kejadian.
 
   Parameter :
   n (banyak kejadian) = 10 (kelahiran)
@@ -69,7 +69,7 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
   - `prob` = nilai probabilitas sukses.
   - `lower.tail` = boolean. Jika TRUE, maka akan menghitung probabilitas di sebelah kiri dari suatu titik. Jika FALSE, maka akan menghitung probabilitas di sebelah kanan dari suatu titik.
 
-    <br/>
+  <br/>
 
   ```r
   n <- 10
@@ -107,11 +107,9 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
 
   Beberapa rumus pada distribusi binomial :
 
-  - nilai ekspetasi/harapan = n \* p
+  - nilai ekspetasi / harapan = n \* p
   - variance = n \* p \* q
-  - simpangan baku = sqrt(variance)
-
-  <br/>
+  - standar deviasi / simpangan baku = sqrt(variance)
 
   Keterangan :
 
@@ -147,4 +145,150 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
      xlab='Banyak bayi laki-laki',
      ylab='Probabilitas'
   )
+  ```
+
+### No 2
+
+Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ban dalam 20 tahun ke depan adalah 1.8, maka:
+
+- #### Poin A
+
+  Bagaimana pendistribusian banyak kematian karena kanker tulang? Tentukan distribusi dengan parameter yang sesuai.
+
+  Solusi :
+
+  ```
+  Distribusi yang sesuai : POISSON
+  Karena terjadi dalam suatu interval waktu atau ruang tertentu.
+
+  Parameter :
+  λ (rata-rata banyak kejadian dalam interval waktu atau ruang tertentu) = 1.8
+
+  Rumus : P(X=k) = e^(-1.8) (1.8^k / k!)
+  e adalah bilangan Euler (2,71828...)
+  ```
+
+- #### Poin B
+
+  Ada 4 kematian akibat kanker tulang yang dilaporkan di kalangan pekerja pabrik ban, apakah itu peristiwa yang tidak biasa? Hitung probabilitas berdasarkan distribusi yang telah dipilih
+
+  Solusi :
+
+  Peristiwanya tergolong tidak biasa. Untuk menghitung probabilitasnya menggunakan distribusi poisson, kita bisa menggunakan fungsi `dpois()` pada bahasa R yang memerlukan beberapa parameter yaitu :
+
+  - `x` = nilai titik yang ingin dicari
+  - `lambda` = rata-rata banyak kejadian (λ)
+
+  <br/>
+
+  ```r
+  probability <- dpois(x=4,lambda=1.8)
+  probability
+  ```
+
+- #### Poin C
+
+  Berapa peluang paling banyak 4 kematian akibat kanker tulang?
+
+  Solusi :
+
+  Untuk menyelesaikan permasalahan ini, kita bisa menggunakan fungsi `ppois()` pada bahasa R yang memerlukan beberapa parameter yaitu :
+
+  - `q` = nilai titik batas maksimal
+  - `lambda` = rata-rata banyak kejadian (λ)
+  - `lower.tail` = boolean. Jika TRUE, maka akan menghitung probabilitas di sebelah kiri dari suatu titik. Jika FALSE, maka akan menghitung probabilitas di sebelah kanan dari suatu titik.
+
+  ```r
+  probability <- ppois(q=4, lambda=1.8, lower.tail=TRUE)
+  probability
+  ```
+
+- #### Poin D
+
+  Berapa peluang lebih dari 4 kematian akibat kanker tulang?
+
+  Solusi :
+
+  Sama seperti permasalahan 2C, kita bisa menggunakan fungsi `ppois()` tapi kita set nilai `lower.tail` menjadi FALSE.
+
+  ```r
+  probability <- ppois(q=5, lambda=1.8, lower.tail=FALSE)
+  probability
+  ```
+
+  Kita set nilai `q` menjadi 5 karena di soal diminta peluang lebih dari 4, maka 4 tidak termasuk.
+
+- #### Poin E
+
+  Berdasarkan distribusi yang telah dipilih, berapakah nilai harapan dan standar deviasi banyak kematian akibat kanker tulang untuk pekerja pabrik ban?
+
+  Solusi :
+
+  Beberapa rumus pada distribusi binomial :
+
+  - nilai ekspetasi / harapan = λ
+  - standar deviasi / simpangan baku = sqrt(nilai harapan)
+
+  <br/>
+
+  ```r
+  nilai_harapan <- lambda
+  nilai_harapan
+
+  standar_deviasi <- sqrt(nilai_harapan)
+  standar_deviasi
+  ```
+
+- #### Poin F
+
+  Gambarkan histogram pendistribusian banyak kematian akibat kanker tulang untuk pekerja pabrik ban.
+
+  Solusi :
+
+  Untuk permasalahan kali ini, kita perlu untuk mengetahui probabilitas tiap titik menggunakan fungsi `dpois()` yang nantinya akan diplot menggunakan fungsi `plot()`. Karena permasalahan kali ini menyinggung tentang kematian, yang mana nilai titik nya hanya bisa bernilai integer positif dengan range hingga 8 (kematian) (karena di atas 8 nilai probabilitasnya sudah 0), maka nilai titiknya hanya 0, 1, 2, 3, 4, 5, 6, 7, 8. Maka dari itu kita perlu array untuk menampung nilai 0-8 tersebut
+
+  ```r
+  arr <- 0:9
+  plot(arr, dpois(arr, lambda=1.8),
+       type='h',
+       main='Histogram Distribusi Poisson',
+       xlab='Banyak kematian'
+       ylab='Probabilitas',
+  )
+  ```
+
+- #### Poin G
+
+  Gunakan simulasi untuk memeriksa hasil sebelumnya
+
+  Solusi :
+
+  Untuk membuat simulasi, kita dapat menggunakan fungsi `rpois()` pada bahasa R yang memerlukan beberapa parameter yaitu :
+
+  - `n` = jumlah sampel yang dihasilkan
+  - `lambda` = rata-rata banyak kejadian (λ)
+
+  <br/>
+
+  Fungsi `rpois()` di bahasa R digunakan untuk menghasilkan sampel bilangan bulat dari distribusi Poisson dengan parameter lambda yang diberikan. Fungsi ini menghasilkan bilangan bulat yang menggambarkan jumlah kejadian dalam interval waktu atau ruang tertentu, di mana kejadian tersebut terjadi secara acak dengan tingkat rata-rata lambda dalam interval yang sama.
+
+  ```r
+  n <- 10
+  set.seed(1)
+  ans <- rpois(n=n, lambda=1.8)
+  ans
+  ```
+
+  kita gunakan `set.seed()` agar sampel yang digenerate selalu sama.
+
+- #### Poin H
+
+  Jelaskan banyak kematian akibat kanker tulang berdasarkan simulasi Anda. Bandingkan jawaban pada pertanyaan 2d dengan hasil simulasi Anda
+
+  Solusi :
+
+  ```
+  Menurut jawaban dari simulasi poin 2G, terlihat bahwa nilai yang digenerate terletak dalam range 0-4. Jika kita tidak gunakan fungsi `set.seed()`, maka akan terlihat bahwa nilai yang digenerate memiliki presentase lebih besar berada dalam range 0-4 yang berarti nilai tersebut memiliki peluang yang lebih besar karena tetap berada dekat dengan lambda yakni 1,8.
+
+  Sampel dari simulasi poin 2G tersebut membuktikan jawaban dari poin 2D bahwa probabilitas kematian diatas 4 memiliki nilai yang kecil. Bahwa kematian = 4 itu memang bukanlah kejadian biasa akan tetapi tidak jarang terjadi.
   ```
