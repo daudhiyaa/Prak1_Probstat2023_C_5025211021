@@ -3,32 +3,55 @@ s <- 1
 n <- 7
 
 # Poin A
-# Tentukan nilai t-score
-t <- (-2.34 - mean) / (s / sqrt(n))
+# P(X < a) = pt((a - μ) / (s/√n), df=n-1)
+a <- -2.34
+t <- (a - mean) / (s / sqrt(n))
 t
 
-prob <- pt(t, df = 6)
-prob
+probA <- pt(t, df = n-1)
+probA
 
 # Poin B
-t <- (1.34 - mean) / (s / sqrt(n))
+# P(X > a) = 1 - pt((a - μ) / (s/√n), df=n-1)
+a <- 1.34
+t <- (a - mean) / (s / sqrt(n))
 t
-prob <- pt(t, df = 6)
-prob
+
+probB <- 1 - pt(t, df = n-1)
+probB
 
 # Poin C
-# Menghitung t-score
-n <- 3
-t_score1 <- (1.23 - mean) / (s / sqrt(n))
-t_score2 <- (-1.23 - mean) / (s / sqrt(n))
+# P(|X| > a) = 2 * (1 - pt(|a|, df=n-1))
+df <- 3
+a <- 1.23
+probC <- 2 * (1 - pt(abs(a), df))
 
-# Menghitung probabilitas menggunakan tabel distribusi t-student
-prob1 <- pt(t_score1, df = 3)
-prob2 <- pt(t_score2, df = 3)
+# Poin D
+# P(|X| > a) = 1 - (2 * (1 - pt(|a|, df=n-1)))
+df <- 14
+a <- 0.94
+probD <- 1 - (2 * (1 - pt(abs(a), df)))
 
-# Menghitung probabilitas untuk kedua peristiwa acak secara bersamaan
-prob_overlap <- pt(1.23, df = 3) - pt(-1.23, df = 3)
+# Poin E
+area <- 0.0333
+df <- 5
+tscore_E <- qt(x, df)
+tscore_E
 
-# Menghitung probabilitas terjadinya peristiwa acak X kurang dari -1,23 atau lebih besar dari 1,23
-prob <- prob1 + prob2 - prob_overlap
-prob
+# Poin F
+area <- 1 - 0.125
+df <- 25
+tscore_F <- qt(area, df)
+tscore_F
+
+# Poin G
+x <- 0.75 + ((1-0.75)/2)
+df <- 11
+tscore_G <- qt(x, df=df)
+tscore_G
+
+# Poin H
+x <- 1 - (0.0333/2)
+df <- 23
+tscore_H <- qt(x, df=df)
+tscore_H
