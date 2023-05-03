@@ -18,7 +18,7 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
 
   Bagaimana pendistribusian banyak bayi laki-laki? Tentukan distribusi dengan parameter yang sesuai.
 
-  Solusi :
+  #### Solusi :
 
   ```
   Distribusi yang sesuai : BINOMIAL
@@ -35,7 +35,7 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
 
   Berapa probabilitas bahwa tepat tiga bayi di antaranya berjenis kelamin laki-laki?
 
-  Solusi :
+  #### Solusi :
 
   Untuk mencari probabilitas suatu titik menggunakan distribusi binomial, kita bisa menggunakan fungsi `dbinom()` pada bahasa R yang memerlukan beberapa parameter yaitu :
 
@@ -55,7 +55,7 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
 
   Berapa probabilitas bahwa kurang dari tiga bayi di antaranya berjenis kelamin laki-laki?
 
-  Solusi :
+  #### Solusi :
 
   Untuk mencari probabilitas dalam interval kurang dari suatu titik (berada di sebelah kiri dari suatu titik), kita bisa menggunakan fungsi `pbinom()` pada bahasa R yang memerlukan beberapa parameter yaitu :
 
@@ -78,7 +78,7 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
 
   Berapa probabilitas bahwa tiga atau lebih bayi di antaranya berjenis kelamin laki-laki?
 
-  Solusi :
+  #### Solusi :
 
   Pada permasalahan kali ini, kita juga akan menggunakan fungsi `pbinom` sama seperti permasalahan 1C, akan tetapi kali ini kita set nilai `lower.tail` menjadi `FALSE`. Atau kita juga bisa mendapatkan solusi nya dengan cara mengurangi 1 dengan jawaban dari permasalahan 1C
 
@@ -98,7 +98,7 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
 
   Berapa nilai harapan dan simpangan baku banyak bayi laki-laki
 
-  Solusi :
+  #### Solusi :
 
   Beberapa rumus pada distribusi binomial :
 
@@ -128,7 +128,7 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
 
   Gambarkan histogram pendistribusian banyak bayi laki-laki
 
-  Solusi :
+  #### Solusi :
 
   Untuk permasalahan kali ini, kita perlu untuk mengetahui probabilitas tiap titik menggunakan fungsi `dbinom()` yang nantinya akan diplot menggunakan fungsi `plot()`. Karena permasalahan kali ini menyinggung tentang bayi, yang mana nilai titik nya hanya bisa bernilai integer positif dengan range max adalah 10 (kelahiran), maka nilai titiknya hanya 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. Maka dari itu kita perlu array untuk menampung nilai 0-10 tersebut
 
@@ -142,7 +142,7 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
   )
   ```
 
-### No 2
+## No 2
 
 Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ban dalam 20 tahun ke depan adalah 1.8, maka:
 
@@ -150,7 +150,7 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
 
   Bagaimana pendistribusian banyak kematian karena kanker tulang? Tentukan distribusi dengan parameter yang sesuai.
 
-  Solusi :
+  #### Solusi :
 
   ```
   Distribusi yang sesuai : POISSON
@@ -167,7 +167,7 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
 
   Ada 4 kematian akibat kanker tulang yang dilaporkan di kalangan pekerja pabrik ban, apakah itu peristiwa yang tidak biasa? Hitung probabilitas berdasarkan distribusi yang telah dipilih
 
-  Solusi :
+  #### Solusi :
 
   Peristiwanya tergolong tidak biasa. Untuk menghitung probabilitasnya menggunakan distribusi poisson, kita bisa menggunakan fungsi `dpois()` pada bahasa R yang memerlukan beberapa parameter yaitu :
 
@@ -185,7 +185,7 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
 
   Berapa peluang paling banyak 4 kematian akibat kanker tulang?
 
-  Solusi :
+  #### Solusi :
 
   Untuk menyelesaikan permasalahan ini, kita bisa menggunakan fungsi `ppois()` pada bahasa R yang memerlukan beberapa parameter yaitu :
 
@@ -202,7 +202,7 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
 
   Berapa peluang lebih dari 4 kematian akibat kanker tulang?
 
-  Solusi :
+  #### Solusi :
 
   Sama seperti permasalahan 2C, kita bisa menggunakan fungsi `ppois()` tapi kita set nilai `lower.tail` menjadi FALSE.
 
@@ -217,7 +217,7 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
 
   Berdasarkan distribusi yang telah dipilih, berapakah nilai harapan dan standar deviasi banyak kematian akibat kanker tulang untuk pekerja pabrik ban?
 
-  Solusi :
+  #### Solusi :
 
   Beberapa rumus pada distribusi binomial :
 
@@ -238,7 +238,7 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
 
   Gambarkan histogram pendistribusian banyak kematian akibat kanker tulang untuk pekerja pabrik ban.
 
-  Solusi :
+  #### Solusi :
 
   Untuk permasalahan kali ini, kita perlu untuk mengetahui probabilitas tiap titik menggunakan fungsi `dpois()` yang nantinya akan diplot menggunakan fungsi `plot()`. Karena permasalahan kali ini menyinggung tentang kematian, yang mana nilai titik nya hanya bisa bernilai integer positif dengan range hingga 8 (kematian) (karena di atas 8 nilai probabilitasnya sudah 0), maka nilai titiknya hanya 0, 1, 2, 3, 4, 5, 6, 7, 8. Maka dari itu kita perlu array untuk menampung nilai 0-8 tersebut
 
@@ -256,7 +256,7 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
 
   Gunakan simulasi untuk memeriksa hasil sebelumnya
 
-  Solusi :
+  #### Solusi :
 
   Untuk membuat simulasi, kita dapat menggunakan fungsi `rpois()` pada bahasa R yang memerlukan beberapa parameter yaitu :
 
@@ -280,7 +280,7 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
 
   Jelaskan banyak kematian akibat kanker tulang berdasarkan simulasi Anda. Bandingkan jawaban pada pertanyaan 2d dengan hasil simulasi Anda
 
-  Solusi :
+  #### Solusi :
 
   ```
   Menurut jawaban dari simulasi poin 2G, terlihat bahwa nilai yang digenerate terletak dalam range 0-4.
@@ -319,7 +319,7 @@ Diketahui nilai x = 3 dan v = 10.
 
   Histogram dari Distribusi Chi-Square dengan 500 data acak
 
-  Solusi :
+  #### Solusi :
 
   Untuk membuat histogram, kita membutuhkan bantuan dari fungsi `hist()` dengan parameter fungsi random chi-square `rchisq()`.
 
@@ -372,7 +372,7 @@ Diketahui data bangkitan acak sebanyak 100 dengan mean = 45 dan sd = 5. Tentukan
   X2 = 6
   ```
 
-  Solusi :
+  #### Solusi :
 
   Untuk menyelesaikan permasalahan ini langkah pertama yang perlu dilakukan adalah kita perlu menghasilkan data - data yang diperlukan dari data yang tersedia menggunakan bantuan fungsi `rnorm()` yang mana parameternya adalah `n`, `mean`, dan `sd`.
 
@@ -410,7 +410,7 @@ Diketahui data bangkitan acak sebanyak 100 dengan mean = 45 dan sd = 5. Tentukan
 
   Gambarkan histogram dari distribusi Normal dengan breaks 50
 
-  Solusi :
+  #### Solusi :
 
   Untuk membuat histogram kita membutuhkan fungsi `hist()` yang isi parameternya adalah `data` dan `breaks` yang mana diketahui dari soal.
 
@@ -423,7 +423,7 @@ Diketahui data bangkitan acak sebanyak 100 dengan mean = 45 dan sd = 5. Tentukan
 
   Nilai varian (σ²) dari hasil data bangkitan acak distribusi Normal
 
-  Solusi :
+  #### Solusi :
 
   Untuk mendapatkan varian kita memerlukan bantuan dari fungsi `sd()` yang parameternya `data` kemudian hasil dari fungsi itu kita kuadratkan.
 
@@ -440,7 +440,7 @@ Kerjakanlah menggunakan distribusi T-Student
 
   Berapa probabilitas terjadinya suatu peristiwa acak X kurang dari -2,34 dengan 6 derajat kebebasan?
 
-  Solusi :
+  #### Solusi :
 
   Untuk mendapatkan probabilitas menggunakan distribusi T-Student, kita dapat menggunakan fungsi `pt()` pada bahasa R yang memerlukan beberapa parameter yaitu :
 
@@ -461,7 +461,7 @@ Kerjakanlah menggunakan distribusi T-Student
 
   Berapa probabilitas terjadinya suatu peristiwa acak X lebih dari 1,34 dengan 6 derajat kebebasan?
 
-  Solusi :
+  #### Solusi :
 
   Mirip dengan penyelesaian permasalahan 5A, kita dapat menggunakan fungsi `pt()`. Akan tetapi, perbedaannya adalah kita set nilai `lower.tail` menjadi `FALSE` karena kita akan menghitung probabilitas daerah kanan dari (lebih dari) suatu titik.
 
@@ -476,7 +476,7 @@ Kerjakanlah menggunakan distribusi T-Student
 
   Berapa probabilitas terjadinya suatu peristiwa acak X kurang dari -1,23 atau lebih besar dari 1,23 dengan 3 derajat kebebasan?
 
-  Solusi :
+  #### Solusi :
 
   Karena grafik distribusi t-student berbentuk lonceng simetris, maka luas kanan & kiri dari titik pusat sama luasnya. Maka untuk permasalahan kali ini, kita bisa menyelesaikannya dengan menghitung salah satu luasan dan mengalikannya dengan 2
 
@@ -497,7 +497,7 @@ Kerjakanlah menggunakan distribusi T-Student
 
   Berapa probabilitas terjadinya suatu peristiwa acak X berada di antara -0,94 dan 0,94 dengan 14 derajat kebebasan?
 
-  Solusi :
+  #### Solusi :
 
   Kita dapat menghitung luasan ke kiri dari titik positif (0.94) dikurangi dengan luasan ke kiri dari titik negatif (-0.94), akan menghasilkan luasan antara titik -0.94 dan absolutnya
 
@@ -533,7 +533,7 @@ Kerjakanlah menggunakan distribusi T-Student
 
   Berapa nilai t-score dengan 25 derajat kebebasan yang memiliki luasan 0,125 satuan persegi di bawah kurva dan di sebelah kanan t-score tersebut?
 
-  Solusi :
+  #### Solusi :
 
   Mirip dengan permasalahan poin 5E, akan tetapi, kali ini kita set nilai `lower.tail` menjadi `FALSE` karena kita akan menghitung t-score daerah kanan dari (lebih dari) suatu titik.
 
@@ -554,7 +554,7 @@ Kerjakanlah menggunakan distribusi T-Student
 
   Berapa nilai t-score dengan 11 derajat kebebasan yang memiliki luasan 0,75 satuan persegi di bawah kurva dan di antara t-score tersebut dan negatif dari nilai t-score tersebut?
 
-  Solusi :
+  #### Solusi :
 
   Luasan dibawah kurva dan didalam range t-score & negatifnya adalah 0.75, maka luasan sisanya adalah 1 - 0.75 = 0.25. Dan karena T-student berbentuk simteris, maka luasan di kanan maupun di kiri adalah 0.25 / 2 = 0.125. Kita perlu mencari nilai t-score yang memiliki luasan 0,125 tersebut.
 
@@ -570,7 +570,7 @@ Kerjakanlah menggunakan distribusi T-Student
 
   Berapa nilai t-score dengan 23 derajat kebebasan yang memiliki luasan 0,0333 satuan persegi di bawah kurva dan di luar interval antara t-score tersebut dan negatif dari nilai t-score tersebut
 
-  Solusi :
+  #### Solusi :
 
   Mirip dengan solusi pada permasalahan poin 5G, akan tetapi kali ini kita kalikan 0.5 terlebih dahulu area yang diketahui untuk mengetahui luasan dikanannya saja. Setelah mengetahuinya, kita dapat mengurangi 1 dengan luasan kanan tersebut untuk mengetahui luasa dari t-score hingga ke kiri / minus tak hingga
 
