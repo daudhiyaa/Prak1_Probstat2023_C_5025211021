@@ -2,17 +2,17 @@
 
 ## Daftar Isi
 
-#### [Identitas Diri](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#identitas-diri-1)
+[Identitas Diri](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#identitas-diri-1)
 
-#### [Nomor 1](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-1)
+[Nomor 1](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-1)
 
-#### [Nomor 2](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-2)
+[Nomor 2](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-2)
 
-#### [Nomor 3](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-3)
+[Nomor 3](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-3)
 
-#### [Nomor 4](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-4)
+[Nomor 4](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-4)
 
-#### [Nomor 5](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-5)
+[Nomor 5](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-5)
 
 ## Identitas Diri
 
@@ -347,10 +347,6 @@ Diketahui nilai x = 3 dan v = 10.
 
   Jika ingin data yang sama setiap kali generate, maka dapat menggunakan fungsi `set.seed()`
 
-  Didapat hasil :
-
-<br />
-
 - ### Poin C
 
   Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Chi-Square
@@ -448,12 +444,152 @@ Diketahui data bangkitan acak sebanyak 100 dengan mean = 45 dan sd = 5. Tentukan
 
 ## No 5
 
-Kerjakanlah menggunakan distribusi T-Studen
+Kerjakanlah menggunakan distribusi T-Student
 
 - ### Poin A
 
   Berapa probabilitas terjadinya suatu peristiwa acak X kurang dari -2,34 dengan 6 derajat kebebasan?
 
-  Solusi
+  Solusi :
 
-# <div style="align-items: center; justify-items: center"><p> Sekian dan Terima Kasih</p></div>
+  Untuk mendapatkan probabilitas menggunakan distribusi T-Student, kita dapat menggunakan fungsi `pt()` pada bahasa R yang memerlukan beberapa parameter yaitu :
+
+  - `q` = nilai titik batas maksimal
+  - `df` = degrees of freedom (derajat kebebasan)
+  - `lower.tail` = boolean. Jika TRUE, maka akan menghitung probabilitas di sebelah kiri dari suatu titik. Jika FALSE, maka akan menghitung probabilitas di sebelah kanan dari suatu titik.
+
+  <br/>
+
+  ```r
+  X <- -2.34
+  df <- 6
+  probA <- pt(q=X, df=df, lower.tail = TRUE)
+  probA
+  ```
+
+- ### Poin B
+
+  Berapa probabilitas terjadinya suatu peristiwa acak X lebih dari 1,34 dengan 6 derajat kebebasan?
+
+  Solusi :
+
+  Mirip dengan penyelesaian permasalahan 5A, kita dapat menggunakan fungsi `pt()`. Akan tetapi, perbedaannya adalah kita set nilai `lower.tail` menjadi `FALSE` karena kita akan menghitung probabilitas daerah kanan dari (lebih dari) suatu titik.
+
+  ```r
+  X <- 1.34
+  df <- 6
+  probB <- pt(q=X, df=df, lower.tail = FALSE)
+  probB
+  ```
+
+- ### Poin C
+
+  Berapa probabilitas terjadinya suatu peristiwa acak X kurang dari -1,23 atau lebih besar dari 1,23 dengan 3 derajat kebebasan?
+
+  Solusi :
+
+  Karena grafik distribusi t-student berbentuk lonceng simetris, maka luas kanan & kiri dari titik pusat sama luasnya. Maka untuk permasalahan kali ini, kita bisa menyelesaikannya dengan menghitung salah satu luasan dan mengalikannya dengan 2
+
+  ```r
+  X <- -1.23
+  df <- 3
+  probC <- 2 * (pt(X, df=df, lower.tail = TRUE))
+  probC
+
+  # alternatively
+  X <- 1.23
+  df <- 3
+  probC <- 2 * (pt(X, df=df, lower.tail = FALSE))
+  probC
+  ```
+
+- ### Poin D
+
+  Berapa probabilitas terjadinya suatu peristiwa acak X berada di antara -0,94 dan 0,94 dengan 14 derajat kebebasan?
+
+  Solusi :
+
+  Kita dapat menghitung luasan ke kiri dari titik positif (0.94) dikurangi dengan luasan ke kiri dari titik negatif (-0.94), akan menghasilkan luasan antara titik -0.94 dan absolutnya
+
+  ```r
+  X <- -0.94
+  df <- 14
+  probD <- pt(abs(X), df=df) - pt(X, df=df)
+  probD
+  ```
+
+- ### Poin E
+
+  Berapa nilai t-score dengan 5 derajat kebebasan yang memiliki luasan 0,0333 satuan persegi di bawah kurva dan di sebelah kiri t-score tersebut?
+
+  Solusi:
+
+  Pada permasalahan kali ini, yang dicari adalah nilai t-scorenya dengan diketahui `df` dan luasan / probabilitasnya. Kita dapat menggunakan fungsi `qt()` pada bahasa R yang memerlukan beberapa parameter yaitu :
+
+  - `x` = luasan / nilai probabilitas
+  - `df` = degrees of freedom (derajat kebebasan)
+  - `lower.tail` = boolean. Jika TRUE, maka akan menghitung t-score di sebelah kiri dari suatu titik. Jika FALSE, maka akan menghitung t-score di sebelah kanan dari suatu titik.
+
+  <br />
+
+  ```r
+  area <- 0.0333
+  df <- 5
+  tscore_E <- qt(area, df, lower.tail = TRUE)
+  tscore_E
+  ```
+
+- ### Poin F
+
+  Berapa nilai t-score dengan 25 derajat kebebasan yang memiliki luasan 0,125 satuan persegi di bawah kurva dan di sebelah kanan t-score tersebut?
+
+  Solusi :
+
+  Mirip dengan permasalahan poin 5E, akan tetapi, kali ini kita set nilai `lower.tail` menjadi `FALSE` karena kita akan menghitung t-score daerah kanan dari (lebih dari) suatu titik.
+
+  ```r
+  area <- 0.125
+  df <- 25
+  tscore_F <- qt(area, df, lower.tail = FALSE)
+  tscore_F
+
+  # alternatively
+  area <- 0.125
+  df <- 25
+  tscore_F <- qt(1 - area, df, lower.tail = TRUE)
+  tscore_F
+  ```
+
+- ### Poin G
+
+  Berapa nilai t-score dengan 11 derajat kebebasan yang memiliki luasan 0,75 satuan persegi di bawah kurva dan di antara t-score tersebut dan negatif dari nilai t-score tersebut?
+
+  Solusi :
+
+  Luasan dibawah kurva dan didalam range t-score & negatifnya adalah 0.75, maka luasan sisanya adalah 1 - 0.75 = 0.25. Dan karena T-student berbentuk simteris, maka luasan di kanan maupun di kiri adalah 0.25 / 2 = 0.125. Kita perlu mencari nilai t-score yang memiliki luasan 0,125 tersebut.
+
+  ```r
+  area <- 0.75
+  x <- (1 - area) / 2
+  df <- 11
+  tscore_G <- qt(x, df = df, lower.tail = FALSE)
+  tscore_G
+  ```
+
+- ### Poin H
+
+  Berapa nilai t-score dengan 23 derajat kebebasan yang memiliki luasan 0,0333 satuan persegi di bawah kurva dan di luar interval antara t-score tersebut dan negatif dari nilai t-score tersebut
+
+  Solusi :
+
+  Mirip dengan solusi pada permasalahan poin 5G, akan tetapi kali ini kita kalikan 0.5 terlebih dahulu area yang diketahui untuk mengetahui luasan dikanannya saja. Setelah mengetahuinya, kita dapat mengurangi 1 dengan luasan kanan tersebut untuk mengetahui luasa dari t-score hingga ke kiri / minus tak hingga
+
+  ```r
+  area <- 0.0333
+  x <- 1 - (area/2)
+  df <- 23
+  tscore_H <- qt(x, df)
+  tscore_H
+  ```
+
+# <div align="center"><p> Sekian dan Terima Kasih</p></div>
