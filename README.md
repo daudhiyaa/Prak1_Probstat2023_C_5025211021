@@ -51,6 +51,8 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
   probability
   ```
 
+  #### Hasil :
+
 - ### Poin C
 
   Berapa probabilitas bahwa kurang dari tiga bayi di antaranya berjenis kelamin laki-laki?
@@ -74,6 +76,8 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
 
   Nilai q kita set menjadi 2 karena nilai 3 tidak termasuk yang mau kita hitung. Karena dalam hal ini, kita akan menghitung probabilitas kejadian 0, 1, atau 2 bayi laki-laki.
 
+  #### Hasil :
+
 - ### Poin D
 
   Berapa probabilitas bahwa tiga atau lebih bayi di antaranya berjenis kelamin laki-laki?
@@ -93,6 +97,8 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
   ```
 
   Kita set nilai q menjadi 3 karena 3 juga ikut dihitung berdasarkan kalimat dari soal.
+
+  #### Hasil :
 
 - ### Poin E
 
@@ -124,6 +130,8 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
   simpangan_baku
   ```
 
+  #### Hasil :
+
 - ### Poin F
 
   Gambarkan histogram pendistribusian banyak bayi laki-laki
@@ -135,12 +143,14 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
   ```r
   arr <- 0:10
   plot(arr, dbinom(x=arr, size=n, prob=p),
-     type='h',
-     main='Histogram Distribusi Binomial',
-     xlab='Banyak bayi laki-laki',
-     ylab='Probabilitas'
+      type='h',
+      main='Histogram Distribusi Banyak Bayi Laki-laki',
+      xlab='Banyak bayi laki-laki',
+      ylab='Probabilitas'
   )
   ```
+
+  #### Hasil :
 
 ## No 2
 
@@ -181,6 +191,8 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
   probability
   ```
 
+  #### Hasil :
+
 - ### Poin C
 
   Berapa peluang paling banyak 4 kematian akibat kanker tulang?
@@ -193,10 +205,14 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
   - `lambda` = rata-rata banyak kejadian (λ)
   - `lower.tail` = boolean. Jika TRUE, maka akan menghitung probabilitas di sebelah kiri dari suatu titik. Jika FALSE, maka akan menghitung probabilitas di sebelah kanan dari suatu titik.
 
+  <br/>
+
   ```r
   probability <- ppois(q=4, lambda=1.8, lower.tail=TRUE)
   probability
   ```
+
+  #### Hasil :
 
 - ### Poin D
 
@@ -212,6 +228,8 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
   ```
 
   Kita set nilai `q` menjadi 5 karena di soal diminta peluang lebih dari 4, maka 4 tidak termasuk.
+
+  #### Hasil :
 
 - ### Poin E
 
@@ -234,6 +252,8 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
   standar_deviasi
   ```
 
+  #### Hasil :
+
 - ### Poin F
 
   Gambarkan histogram pendistribusian banyak kematian akibat kanker tulang untuk pekerja pabrik ban.
@@ -251,6 +271,8 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
        ylab='Probabilitas',
   )
   ```
+
+  #### Hasil :
 
 - ### Poin G
 
@@ -276,6 +298,8 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
 
   kita gunakan `set.seed()` agar sampel yang digenerate selalu sama.
 
+  #### Hasil :
+
 - ### Poin H
 
   Jelaskan banyak kematian akibat kanker tulang berdasarkan simulasi Anda. Bandingkan jawaban pada pertanyaan 2d dengan hasil simulasi Anda
@@ -299,7 +323,7 @@ Diketahui nilai x = 3 dan v = 10.
 
   Fungsi Probabilitas dari Distribusi Chi-Square
 
-  Solusi:
+  #### Solusi :
 
   Solusi dari permasalahan ini adalah kita dapat menggunakan distribusi chi-square dan kita menggunakan bantuan dari fungsi `dchisq()` pada bahasa R yang memerlukan beberapa parameter yaitu :
 
@@ -314,6 +338,8 @@ Diketahui nilai x = 3 dan v = 10.
   probability <- dchisq(x, v)
   probability
   ```
+
+  #### Hasil :
 
 - ### Poin B
 
@@ -331,15 +357,19 @@ Diketahui nilai x = 3 dan v = 10.
     rchisq(n, v),
     xlab = "X",
     ylab = "V",
-    main = "Grafik Histogram"
+    main = "Histogram Distribusi Chi-Square 500 Data Acak"
   )
   ```
 
   Jika ingin data yang sama setiap kali generate, maka dapat menggunakan fungsi `set.seed()`
 
+  #### Hasil :
+
 - ### Poin C
 
   Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Chi-Square
+
+  #### Solusi :
 
   Penyelesaian dari masalah ini adalah menggunakan rumus mean = v dan varian = 2 \* v.
 
@@ -350,6 +380,8 @@ Diketahui nilai x = 3 dan v = 10.
   variance <- 2 * v
   variance
   ```
+
+  #### Hasil :
 
 ## No 4
 
@@ -406,6 +438,8 @@ Diketahui data bangkitan acak sebanyak 100 dengan mean = 45 dan sd = 5. Tentukan
 
   Jika ingin data yang sama setiap kali generate, maka dapat menggunakan fungsi `set.seed()`
 
+  #### Hasil :
+
 - ### Poin B
 
   Gambarkan histogram dari distribusi Normal dengan breaks 50
@@ -419,6 +453,8 @@ Diketahui data bangkitan acak sebanyak 100 dengan mean = 45 dan sd = 5. Tentukan
   hist(data, breaks, main = "Normal Distribution Histogram")
   ```
 
+  #### Hasil :
+
 - ### Poin C
 
   Nilai varian (σ²) dari hasil data bangkitan acak distribusi Normal
@@ -431,6 +467,8 @@ Diketahui data bangkitan acak sebanyak 100 dengan mean = 45 dan sd = 5. Tentukan
   variance <- sd(data) ^ 2
   variance
   ```
+
+  #### Hasil :
 
 ## No 5
 
@@ -457,6 +495,8 @@ Kerjakanlah menggunakan distribusi T-Student
   probA
   ```
 
+  #### Hasil :
+
 - ### Poin B
 
   Berapa probabilitas terjadinya suatu peristiwa acak X lebih dari 1,34 dengan 6 derajat kebebasan?
@@ -471,6 +511,8 @@ Kerjakanlah menggunakan distribusi T-Student
   probB <- pt(q=X, df=df, lower.tail = FALSE)
   probB
   ```
+
+  #### Hasil :
 
 - ### Poin C
 
@@ -493,6 +535,8 @@ Kerjakanlah menggunakan distribusi T-Student
   probC
   ```
 
+  #### Hasil :
+
 - ### Poin D
 
   Berapa probabilitas terjadinya suatu peristiwa acak X berada di antara -0,94 dan 0,94 dengan 14 derajat kebebasan?
@@ -508,11 +552,13 @@ Kerjakanlah menggunakan distribusi T-Student
   probD
   ```
 
+  #### Hasil :
+
 - ### Poin E
 
   Berapa nilai t-score dengan 5 derajat kebebasan yang memiliki luasan 0,0333 satuan persegi di bawah kurva dan di sebelah kiri t-score tersebut?
 
-  Solusi:
+  #### Solusi :
 
   Pada permasalahan kali ini, yang dicari adalah nilai t-scorenya dengan diketahui `df` dan luasan / probabilitasnya. Kita dapat menggunakan fungsi `qt()` pada bahasa R yang memerlukan beberapa parameter yaitu :
 
@@ -528,6 +574,8 @@ Kerjakanlah menggunakan distribusi T-Student
   tscore_E <- qt(area, df, lower.tail = TRUE)
   tscore_E
   ```
+
+  #### Hasil :
 
 - ### Poin F
 
@@ -550,6 +598,8 @@ Kerjakanlah menggunakan distribusi T-Student
   tscore_F
   ```
 
+  #### Hasil :
+
 - ### Poin G
 
   Berapa nilai t-score dengan 11 derajat kebebasan yang memiliki luasan 0,75 satuan persegi di bawah kurva dan di antara t-score tersebut dan negatif dari nilai t-score tersebut?
@@ -566,6 +616,8 @@ Kerjakanlah menggunakan distribusi T-Student
   tscore_G
   ```
 
+  #### Hasil :
+
 - ### Poin H
 
   Berapa nilai t-score dengan 23 derajat kebebasan yang memiliki luasan 0,0333 satuan persegi di bawah kurva dan di luar interval antara t-score tersebut dan negatif dari nilai t-score tersebut
@@ -581,5 +633,7 @@ Kerjakanlah menggunakan distribusi T-Student
   tscore_H <- qt(x, df)
   tscore_H
   ```
+
+  #### Hasil :
 
 # <div align="center"><p> Sekian dan Terima Kasih</p></div>

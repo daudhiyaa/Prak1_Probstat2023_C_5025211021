@@ -12,7 +12,7 @@ hist(
   rchisq(n, v), 
   xlab = "X", 
   ylab = "V", 
-  main = "Grafik Histogram"
+  main = "Histogram Distribusi Chi-Square 500 Data Acak"
 )
 
 # Poin C

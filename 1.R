@@ -27,7 +27,7 @@ standar_deviasi
 arr <- 0:10
 plot(arr, dbinom(x=arr, size=n, prob=p), 
      type='h',
-     main='Distribusi Binomial',
+     main='Histogram Distribusi Banyak Bayi Laki-laki',
      xlab='Banyak bayi laki-laki',
      ylab='Probabilitas'
 )
