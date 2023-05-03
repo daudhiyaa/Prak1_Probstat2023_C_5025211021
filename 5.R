@@ -36,9 +36,9 @@ tscore_F
 
 # Poin G
 area <- 0.75
-x <- (1-area)/2 + area
+x <- (1 - area) / 2
 df <- 11
-tscore_G <- qt(x, df)
+tscore_G <- qt(x, df = df, lower.tail = FALSE)
 tscore_G
 
 # Poin H
