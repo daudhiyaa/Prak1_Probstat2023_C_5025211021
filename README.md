@@ -2,12 +2,17 @@
 
 ## Daftar Isi
 
-- #### [Identitas Diri](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#identitas-diri-1)
-- #### [Nomor 1](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-1)
-- #### [Nomor 2](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-2)
-- #### [Nomor 3](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-3)
-- #### [Nomor 4](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-4)
-- #### [Nomor 5](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-5)
+#### [Identitas Diri](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#identitas-diri-1)
+
+#### [Nomor 1](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-1)
+
+#### [Nomor 2](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-2)
+
+#### [Nomor 3](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-3)
+
+#### [Nomor 4](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-4)
+
+#### [Nomor 5](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-5)
 
 ## Identitas Diri
 
@@ -15,11 +20,11 @@
 | ------------------ | ---------- |
 | Daud Dhiya' Rozaan | 5025211021 |
 
-### No 1
+## No 1
 
 Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,488. Jika kita asumsikan bahwa dalam satu hari di rumah sakit terdapat 10 kelahiran, maka:
 
-- #### Poin A
+- ### Poin A
 
   Bagaimana pendistribusian banyak bayi laki-laki? Tentukan distribusi dengan parameter yang sesuai.
 
@@ -36,7 +41,7 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
   Rumus : P(X=k) = (10Ck) 0.488^k (1-0.488)^(10-k)
   ```
 
-- #### Poin B
+- ### Poin B
 
   Berapa probabilitas bahwa tepat tiga bayi di antaranya berjenis kelamin laki-laki?
 
@@ -56,7 +61,7 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
   probability
   ```
 
-- #### Poin C
+- ### Poin C
 
   Berapa probabilitas bahwa kurang dari tiga bayi di antaranya berjenis kelamin laki-laki?
 
@@ -79,7 +84,7 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
 
   Nilai q kita set menjadi 2 karena nilai 3 tidak termasuk yang mau kita hitung. Karena dalam hal ini, kita akan menghitung probabilitas kejadian 0, 1, atau 2 bayi laki-laki.
 
-- #### Poin D
+- ### Poin D
 
   Berapa probabilitas bahwa tiga atau lebih bayi di antaranya berjenis kelamin laki-laki?
 
@@ -99,7 +104,7 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
 
   Kita set nilai q menjadi 3 karena 3 juga ikut dihitung berdasarkan kalimat dari soal.
 
-- #### Poin E
+- ### Poin E
 
   Berapa nilai harapan dan simpangan baku banyak bayi laki-laki
 
@@ -129,7 +134,7 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
   simpangan_baku
   ```
 
-- #### Poin E
+- ### Poin F
 
   Gambarkan histogram pendistribusian banyak bayi laki-laki
 
@@ -151,7 +156,7 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
 
 Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ban dalam 20 tahun ke depan adalah 1.8, maka:
 
-- #### Poin A
+- ### Poin A
 
   Bagaimana pendistribusian banyak kematian karena kanker tulang? Tentukan distribusi dengan parameter yang sesuai.
 
@@ -168,7 +173,7 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
   e adalah bilangan Euler (2,71828...)
   ```
 
-- #### Poin B
+- ### Poin B
 
   Ada 4 kematian akibat kanker tulang yang dilaporkan di kalangan pekerja pabrik ban, apakah itu peristiwa yang tidak biasa? Hitung probabilitas berdasarkan distribusi yang telah dipilih
 
@@ -186,7 +191,7 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
   probability
   ```
 
-- #### Poin C
+- ### Poin C
 
   Berapa peluang paling banyak 4 kematian akibat kanker tulang?
 
@@ -203,7 +208,7 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
   probability
   ```
 
-- #### Poin D
+- ### Poin D
 
   Berapa peluang lebih dari 4 kematian akibat kanker tulang?
 
@@ -218,7 +223,7 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
 
   Kita set nilai `q` menjadi 5 karena di soal diminta peluang lebih dari 4, maka 4 tidak termasuk.
 
-- #### Poin E
+- ### Poin E
 
   Berdasarkan distribusi yang telah dipilih, berapakah nilai harapan dan standar deviasi banyak kematian akibat kanker tulang untuk pekerja pabrik ban?
 
@@ -239,7 +244,7 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
   standar_deviasi
   ```
 
-- #### Poin F
+- ### Poin F
 
   Gambarkan histogram pendistribusian banyak kematian akibat kanker tulang untuk pekerja pabrik ban.
 
@@ -257,7 +262,7 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
   )
   ```
 
-- #### Poin G
+- ### Poin G
 
   Gunakan simulasi untuk memeriksa hasil sebelumnya
 
@@ -281,14 +286,174 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
 
   kita gunakan `set.seed()` agar sampel yang digenerate selalu sama.
 
-- #### Poin H
+- ### Poin H
 
   Jelaskan banyak kematian akibat kanker tulang berdasarkan simulasi Anda. Bandingkan jawaban pada pertanyaan 2d dengan hasil simulasi Anda
 
   Solusi :
 
   ```
-  Menurut jawaban dari simulasi poin 2G, terlihat bahwa nilai yang digenerate terletak dalam range 0-4. Jika kita tidak gunakan fungsi `set.seed()`, maka akan terlihat bahwa nilai yang digenerate memiliki presentase lebih besar berada dalam range 0-4 yang berarti nilai tersebut memiliki peluang yang lebih besar karena tetap berada dekat dengan lambda yakni 1,8.
+  Menurut jawaban dari simulasi poin 2G, terlihat bahwa nilai yang digenerate terletak dalam range 0-4.
+  Jika kita tidak gunakan fungsi `set.seed()`, maka akan terlihat bahwa nilai yang digenerate memiliki presentase lebih besar berada dalam range 0-4,
+  yang berarti nilai tersebut memiliki peluang yang lebih besar karena tetap berada dekat dengan lambda yakni 1,8.
 
-  Sampel dari simulasi poin 2G tersebut membuktikan jawaban dari poin 2D bahwa probabilitas kematian diatas 4 memiliki nilai yang kecil. Bahwa kematian = 4 itu memang bukanlah kejadian biasa akan tetapi tidak jarang terjadi.
+  Sampel dari simulasi poin 2G tersebut membuktikan jawaban dari poin 2D
+  bahwa probabilitas kematian diatas 4 memiliki nilai yang kecil.
   ```
+
+## No 3
+
+Diketahui nilai x = 3 dan v = 10.
+
+- ### Poin A
+
+  Fungsi Probabilitas dari Distribusi Chi-Square
+
+  Solusi:
+
+  Solusi dari permasalahan ini adalah kita dapat menggunakan distribusi chi-square dan kita menggunakan bantuan dari fungsi `dchisq()` pada bahasa R yang memerlukan beberapa parameter yaitu :
+
+  - `x` = total data
+  - `v` = bilangan bulat positif
+
+  <br/>
+
+  ```r
+  x <- 3
+  v <- 10
+  probability <- dchisq(x, v)
+  probability
+  ```
+
+- ### Poin B
+
+  Histogram dari Distribusi Chi-Square dengan 500 data acak
+
+  Solusi :
+
+  Untuk membuat histogram, kita membutuhkan bantuan dari fungsi `hist()` dengan parameter fungsi random chi-square `rchisq()`.
+
+  ```r
+  n <- 500
+  v <- 10
+  # set.seed(1)
+  hist(
+    rchisq(n, v),
+    xlab = "X",
+    ylab = "V",
+    main = "Grafik Histogram"
+  )
+  ```
+
+  Jika ingin data yang sama setiap kali generate, maka dapat menggunakan fungsi `set.seed()`
+
+  Didapat hasil :
+
+<br />
+
+- ### Poin C
+
+  Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Chi-Square
+
+  Penyelesaian dari masalah ini adalah menggunakan rumus mean = v dan varian = 2 \* v.
+
+  ```r
+  mean <- v
+  mean
+
+  variance <- 2 * v
+  variance
+  ```
+
+## No 4
+
+Diketahui data bangkitan acak sebanyak 100 dengan mean = 45 dan sd = 5. Tentukan:
+
+- ### Poin A
+
+  Fungsi probabilitas dari distribusi Normal P(X1 ≤ x ≤ X2), hitung z-scorenya dan plot data bangkitan acaknya dalam bentuk grafik. Petunjuk (gunakan fungsi plot()).
+
+  ```
+  Keterangan :
+  X1 = Bilangan bulat terdekat di bawah rata-rata
+  X2 = Bilangan bulat terdekat di atas rata-rata
+
+  Contoh data :
+  11
+  1,2,4,2,6,3,10,11,5,3,6,8
+  rata-rata = 5.083333
+  X1 = 5
+  X2 = 6
+  ```
+
+  Solusi :
+
+  Untuk menyelesaikan permasalahan ini langkah pertama yang perlu dilakukan adalah kita perlu menghasilkan data - data yang diperlukan dari data yang tersedia menggunakan bantuan fungsi `rnorm()` yang mana parameternya adalah `n`, `mean`, dan `sd`.
+
+  Langkah berikutnya kita membutuhkan bantuan fungsi `runif()` untuk memperoleh random deviates dari `max(data)` dan `min(data)`. Hasil dari random deviates tadi kemudian menjadi parameter dari fungsi `rnorm()` yang mana digunakan untuk mencari probabilitas yang ditanyakan. Sedangkan untuk plot data dalam bentuk grafik kita dapat menggunakan fungsi `plot()` dengan parameter `data`.
+
+  Untuk menghitung z-scorenya, kita dapat menggunakan persamaan (data-mean(data)) / sd(data)
+
+  ```r
+  n <- 100
+  mean <- 45
+  sd <- 5
+
+  # set.seed(1)
+  data <- rnorm(n, mean, sd)
+  data
+  summary(data)
+
+  z_score <- (data-mean(data))/sd(data)
+  z_score
+
+  x1 <- runif(1, min = min(data), max = mean)
+  x2 <- runif(1, min = mean, max = max(data))
+
+  probability1 <- pnorm(x1, mean, sd)
+  probability2 <- pnorm(x2, mean, sd)
+
+  probability <- probability2 - probability1
+  probability
+  plot(data)
+  ```
+
+  Jika ingin data yang sama setiap kali generate, maka dapat menggunakan fungsi `set.seed()`
+
+- ### Poin B
+
+  Gambarkan histogram dari distribusi Normal dengan breaks 50
+
+  Solusi :
+
+  Untuk membuat histogram kita membutuhkan fungsi `hist()` yang isi parameternya adalah `data` dan `breaks` yang mana diketahui dari soal.
+
+  ```r
+  breaks <- 50
+  hist(data, breaks, main = "Normal Distribution Histogram")
+  ```
+
+- ### Poin C
+
+  Nilai varian (σ²) dari hasil data bangkitan acak distribusi Normal
+
+  Solusi :
+
+  Untuk mendapatkan varian kita memerlukan bantuan dari fungsi `sd()` yang parameternya `data` kemudian hasil dari fungsi itu kita kuadratkan.
+
+  ```r
+  variance <- sd(data) ^ 2
+  variance
+  ```
+
+## No 5
+
+Kerjakanlah menggunakan distribusi T-Studen
+
+- ### Poin A
+
+  Berapa probabilitas terjadinya suatu peristiwa acak X kurang dari -2,34 dengan 6 derajat kebebasan?
+
+  Solusi
+
+# <div style="align-items: center; justify-items: center"><p> Sekian dan Terima Kasih</p></div>
