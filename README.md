@@ -1,18 +1,8 @@
-# Prak1_Probstat2023_C_502521021
+# <div align="center"><p>Prak1_Probstat2023_C_502521021</p></div>
 
 ## Daftar Isi
 
-[Identitas Diri](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#identitas-diri-1)
-
-[Nomor 1](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-1)
-
-[Nomor 2](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-2)
-
-[Nomor 3](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-3)
-
-[Nomor 4](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-4)
-
-[Nomor 5](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-5)
+[Identitas Diri](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#identitas-diri-1) | [Nomor 1](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-1) | [Nomor 2](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-2) | [Nomor 3](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-3) | [Nomor 4](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-4) | [Nomor 5](https://github.com/daudhiyaa/Prak1_Probstat2023_C_502521021#no-5)
 
 ## Identitas Diri
 
