@@ -52,7 +52,7 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
   ```
 
   #### Hasil :
-  
+
   ![1B](https://user-images.githubusercontent.com/90663569/235987892-2d5128c9-dfcd-4cdb-ae07-365374ff70c9.png)
 
 - ### Poin C
@@ -79,7 +79,7 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
   Nilai q kita set menjadi 2 karena nilai 3 tidak termasuk yang mau kita hitung. Karena dalam hal ini, kita akan menghitung probabilitas kejadian 0, 1, atau 2 bayi laki-laki.
 
   #### Hasil :
-  
+
   ![1C](https://user-images.githubusercontent.com/90663569/235987994-270dc716-f86e-40a5-9155-8fdf41008591.png)
 
 - ### Poin D
@@ -103,7 +103,7 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
   Kita set nilai q menjadi 3 karena 3 juga ikut dihitung berdasarkan kalimat dari soal.
 
   #### Hasil :
-  
+
   ![1D](https://user-images.githubusercontent.com/90663569/235988058-35dcb33e-44d8-4513-8dd9-98d014f83dc1.png)
 
 - ### Poin E
@@ -137,7 +137,7 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
   ```
 
   #### Hasil :
-  
+
   ![1E](https://user-images.githubusercontent.com/90663569/235988112-8079596a-69fc-4d1a-81df-aacb0b1f657d.png)
 
 - ### Poin F
@@ -159,7 +159,7 @@ Probabilitas seorang bayi yang baru lahir berjenis kelamin laki-laki adalah 0,48
   ```
 
   #### Hasil :
-  
+
   ![1F](https://user-images.githubusercontent.com/90663569/235988146-747fecd1-71ed-415e-b0e9-b00a81811647.png)
 
 ## No 2
@@ -202,7 +202,7 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
   ```
 
   #### Hasil :
-  
+
   ![2B](https://user-images.githubusercontent.com/90663569/235988181-7e14a61e-32b1-4fe7-a08c-b3bb597c6d50.png)
 
 - ### Poin C
@@ -225,7 +225,7 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
   ```
 
   #### Hasil :
-  
+
   ![2C](https://user-images.githubusercontent.com/90663569/235988379-041ea38e-26dd-49fc-a1a0-7ca9d9bbe453.png)
 
 - ### Poin D
@@ -244,7 +244,7 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
   Kita set nilai `q` menjadi 5 karena di soal diminta peluang lebih dari 4, maka 4 tidak termasuk.
 
   #### Hasil :
-  
+
   ![2D](https://user-images.githubusercontent.com/90663569/235988418-ccafd108-1d8a-4ad4-ab6d-adb56ad6a4e5.png)
 
 - ### Poin E
@@ -269,7 +269,7 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
   ```
 
   #### Hasil :
-  
+
   ![2E](https://user-images.githubusercontent.com/90663569/235988464-fffe87a4-2783-48b0-9e56-c33068f5ba6c.png)
 
 - ### Poin F
@@ -291,7 +291,7 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
   ```
 
   #### Hasil :
-  
+
   ![2F](https://user-images.githubusercontent.com/90663569/235988520-6ca4f8c8-ca2c-4639-9d76-a0bf366420a0.png)
 
 - ### Poin G
@@ -319,7 +319,7 @@ Misalkan banyak kematian karena kanker tulang untuk seluruh pekerja di pabrik ba
   kita gunakan `set.seed()` agar sampel yang digenerate selalu sama.
 
   #### Hasil :
-  
+
   ![2G](https://user-images.githubusercontent.com/90663569/235988585-770927fe-00d6-4fa8-a825-7333cc6b8dbd.png)
 
 - ### Poin H
@@ -362,7 +362,7 @@ Diketahui nilai x = 3 dan v = 10.
   ```
 
   #### Hasil :
-  
+
   ![3A](https://user-images.githubusercontent.com/90663569/235988657-e92eaf9c-0449-47ed-9716-b6126419510e.png)
 
 - ### Poin B
@@ -388,7 +388,7 @@ Diketahui nilai x = 3 dan v = 10.
   Jika ingin data yang sama setiap kali generate, maka dapat menggunakan fungsi `set.seed()`
 
   #### Hasil :
-  
+
   ![3B](https://user-images.githubusercontent.com/90663569/235988726-5ea90d89-e8b0-403e-82a6-c2489417babd.png)
 
 - ### Poin C
@@ -408,7 +408,7 @@ Diketahui nilai x = 3 dan v = 10.
   ```
 
   #### Hasil :
-  
+
   ![3C](https://user-images.githubusercontent.com/90663569/235988786-c1afb613-5b8c-4271-b61d-bb9ed8d1143a.png)
 
 ## No 4
@@ -467,7 +467,7 @@ Diketahui data bangkitan acak sebanyak 100 dengan mean = 45 dan sd = 5. Tentukan
   Jika ingin data yang sama setiap kali generate, maka dapat menggunakan fungsi `set.seed()`
 
   #### Hasil :
-  
+
   ![4A](https://user-images.githubusercontent.com/90663569/235988909-23cfd4da-b4c4-448b-a477-642b75b33c3c.png)
 
 - ### Poin B
@@ -484,7 +484,7 @@ Diketahui data bangkitan acak sebanyak 100 dengan mean = 45 dan sd = 5. Tentukan
   ```
 
   #### Hasil :
-  
+
   ![4B](https://user-images.githubusercontent.com/90663569/235988978-8e521681-0279-4e21-9b47-519bd5d399b7.png)
 
 - ### Poin C
@@ -501,18 +501,12 @@ Diketahui data bangkitan acak sebanyak 100 dengan mean = 45 dan sd = 5. Tentukan
   ```
 
   #### Hasil :
-  
+
   ![4C](https://user-images.githubusercontent.com/90663569/235989066-9e385705-6bc2-4b94-8437-e45497302af1.png)
 
 ## No 5
 
 Kerjakanlah menggunakan distribusi T-Student
-
-#### Hasil :
-
-![5](https://user-images.githubusercontent.com/90663569/235989196-f7c989f2-4787-46a2-b741-573f9d9c9e90.png)
-
-![no5](https://user-images.githubusercontent.com/90663569/235989224-3a6de933-e70b-4950-927c-1d09dad3d7ae.png)
 
 - ### Poin A
 
@@ -534,7 +528,7 @@ Kerjakanlah menggunakan distribusi T-Student
   probA <- pt(q=X, df=df, lower.tail = TRUE)
   probA
   ```
-  
+
 - ### Poin B
 
   Berapa probabilitas terjadinya suatu peristiwa acak X lebih dari 1,34 dengan 6 derajat kebebasan?
@@ -606,7 +600,7 @@ Kerjakanlah menggunakan distribusi T-Student
   tscore_E <- qt(area, df, lower.tail = TRUE)
   tscore_E
   ```
-  
+
 - ### Poin F
 
   Berapa nilai t-score dengan 25 derajat kebebasan yang memiliki luasan 0,125 satuan persegi di bawah kurva dan di sebelah kanan t-score tersebut?
@@ -659,5 +653,11 @@ Kerjakanlah menggunakan distribusi T-Student
   tscore_H <- qt(x, df)
   tscore_H
   ```
+
+#### Hasil :
+
+![5](https://user-images.githubusercontent.com/90663569/235989196-f7c989f2-4787-46a2-b741-573f9d9c9e90.png)
+
+![no5](https://user-images.githubusercontent.com/90663569/235989224-3a6de933-e70b-4950-927c-1d09dad3d7ae.png)
 
 # <div align="center"><p> Sekian dan Terima Kasih</p></div>
