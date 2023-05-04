@@ -1,4 +1,4 @@
-# <div align="center"><p>Prak1_Probstat2023_C_502521021</p></div>
+# <div align="center"><p>Prak1_Probstat2023_C_5025211021</p></div>
 
 ## Daftar Isi
 
@@ -654,7 +654,7 @@ Kerjakanlah menggunakan distribusi T-Student
   tscore_H
   ```
 
-#### Hasil :
+### Hasil :
 
 ![5](https://user-images.githubusercontent.com/90663569/235989196-f7c989f2-4787-46a2-b741-573f9d9c9e90.png)
 
